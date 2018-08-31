@@ -1,0 +1,24 @@
+style.
+  .layui-inline{ margin-left:9px }
+.layui-col-md4
+  .layui-card
+    .layui-card-header 公告
+    .layui-card-body
+      |学习知识，收藏经典
+      <br>
+      |博客
+      <br>
+      |目前只是一个简易博客，以后将完善实现更多功能
+.site-demo-laydate
+  #test-n2.layui-inline
+
+block scripts
+  script.
+    layui.use('laydate', function(){
+      var laydate = layui.laydate;
+      laydate.render({
+        elem: '#test-n2',
+        position: 'static',
+        lang: 'en'
+      });
+    });
