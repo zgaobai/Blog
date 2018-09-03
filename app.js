@@ -10,7 +10,7 @@ const { join } = require("path")
 const app = new Koa
 
 //注册日志模块
-app.use(logger())
+//app.use(logger())
 //配置koa-body处理post请求数据
 app.use(body())
 //配置静态资源目录
